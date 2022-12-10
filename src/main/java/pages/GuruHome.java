@@ -14,5 +14,11 @@ public class GuruHome extends PageObject {
                 + Action.getElementText(getDriver(), title2),
                 strTitle, Action.getElementText(getDriver(), title2));
     }
+
+    public void validate_UserName_Logged(String userName){
+        By userNameLoged = By.cssSelector(".usertext.mr-1");
+        assertEquals("Texto no esperado",userName,Action.getElementText(getDriver(),userNameLoged));
+    }
+
 }
 

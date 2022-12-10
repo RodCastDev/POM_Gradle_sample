@@ -4,12 +4,12 @@ import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-@DefaultUrl("http://demo.guru99.com/V4/")
+@DefaultUrl("https://academy.sophossolutions.com/login/index.php")
 public class GuruLogin  extends PageObject {
 
-    By userName = By.name("uid");
+    By userName = By.name("username");
     By password = By.name("password");
-    By btnLogin = By.name("btnLogin");
+    By btnLogin = By.name("btnlogin");
 
     public void navegateTo(String url){
         Action.navegateToUrl(getDriver(),url);
